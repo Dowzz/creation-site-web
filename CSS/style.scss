@@ -1,0 +1,15 @@
+$dark: #3e363f;
+$light: #fffce8;
+$green: #697a21;
+$lightgreen: #b8b42d;
+body {
+  background: $dark;
+}
+.titre,
+.contact,
+.partage {
+  color: $green;
+}
+.boxMenu {
+  width: 100%;
+}
