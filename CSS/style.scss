@@ -1,15 +1,45 @@
 $dark: #3e363f;
 $light: #fffce8;
-$green: #697a21;
+$greener: #697a21;
 $lightgreen: #b8b42d;
 body {
-  background: $dark;
+  background-image: url("../IMG/background.jpg");
+  background-size: cover;
 }
-.titre,
-.contact,
-.partage {
-  color: $green;
+.footer {
+  position: absolute;
+  display: inline;
+  bottom: 0;
+  justify-content: center;
 }
-.boxMenu {
-  width: 100%;
+.container {
+  padding: 40px;
+  border-radius: 20px;
+}
+#sidebar {
+  float: left;
+  width: 300px;
+  border: 2px solid $greener;
+  border-radius: 20px;
+}
+#content {
+  float: right;
+  width: 750px;
+  border: 2px solid $greener;
+  border-radius: 20px;
+}
+img {
+  vertical-align: middle;
+}
+li {
+  list-style: none;
+}
+.sidebar-contact {
+  line-height: 2.2em;
+}
+.sidebar-partage {
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
