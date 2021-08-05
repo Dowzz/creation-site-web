@@ -1,16 +1,19 @@
 $dark: #3e363f;
 $light: #fffce8;
-$greener: #697a21;
+$purple: #710707;
+$morePurple: #280000;
 $lightgreen: #b8b42d;
 body {
   background-image: url("../IMG/background.jpg");
   background-size: cover;
+  color: $purple;
 }
 .footer {
   position: absolute;
   display: inline;
   bottom: 0;
   justify-content: center;
+  color: $purple;
 }
 .container {
   padding: 40px;
@@ -19,13 +22,14 @@ body {
 #sidebar {
   float: left;
   width: 300px;
-  border: 2px solid $greener;
+  border: 4px solid $purple;
   border-radius: 20px;
+  padding-bottom: 20px;
 }
 #content {
   float: right;
   width: 750px;
-  border: 2px solid $greener;
+  border: 4px solid $purple;
   border-radius: 20px;
 }
 img {
@@ -33,6 +37,9 @@ img {
 }
 li {
   list-style: none;
+}
+li :hover {
+  background: $morePurple;
 }
 .sidebar-contact {
   line-height: 2.2em;
@@ -42,4 +49,16 @@ li {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+.responsive-link {
+  display: none;
+}
+.main-menu {
+  background: $purple;
+}
+.text-decoration-none {
+  color: $light;
+}
+.contact {
+  color: $purple;
 }
