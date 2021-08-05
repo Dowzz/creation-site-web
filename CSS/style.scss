@@ -3,62 +3,98 @@ $light: #fffce8;
 $purple: #710707;
 $morePurple: #280000;
 $lightgreen: #b8b42d;
+
 body {
   background-image: url("../IMG/background.jpg");
   background-size: cover;
-  color: $purple;
 }
-.footer {
-  position: absolute;
-  display: inline;
-  bottom: 0;
-  justify-content: center;
-  color: $purple;
+
+@media (min-width: 992px) {
+  .footer {
+    position: absolute;
+    display: inline;
+    bottom: 0;
+    justify-content: center;
+    color: $purple;
+  }
+  .container {
+    padding: 40px;
+    border-radius: 20px;
+  }
+  #sidebar {
+    float: left;
+    width: 25%;
+    border: 4px solid $purple;
+    border-radius: 20px;
+    padding-bottom: 40px;
+    background: $morePurple;
+    color: $light;
+  }
+  #content {
+    float: right;
+    width: 70%;
+    border: 4px solid $purple;
+    border-radius: 20px;
+  }
+  img {
+    vertical-align: middle;
+  }
+  li {
+    list-style: none;
+  }
+  .menuPuce :hover {
+    background-color: $purple;
+    color: $light;
+  }
+
+  .sidebar-contact {
+    line-height: 2.2em;
+    padding: 20px;
+  }
+  .sidebar-partage {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .responsive-link {
+    display: none;
+  }
+
+  .text-decoration-none,
+  .contact {
+    color: $light;
+  }
 }
-.container {
-  padding: 40px;
-  border-radius: 20px;
-}
-#sidebar {
-  float: left;
-  width: 300px;
-  border: 4px solid $purple;
-  border-radius: 20px;
-  padding-bottom: 20px;
-}
-#content {
-  float: right;
-  width: 750px;
-  border: 4px solid $purple;
-  border-radius: 20px;
-}
-img {
-  vertical-align: middle;
-}
-li {
-  list-style: none;
-}
-li :hover {
-  background: $morePurple;
-}
-.sidebar-contact {
-  line-height: 2.2em;
-}
-.sidebar-partage {
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-.responsive-link {
-  display: none;
-}
-.main-menu {
-  background: $purple;
-}
-.text-decoration-none {
-  color: $light;
-}
-.contact {
-  color: $purple;
+
+@media (max-width: 992px) {
+  #logo {
+    width: 300px;
+    height: 150px;
+  }
+  .navbar-vert,
+  .responsive-link,
+  .header-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .responsive-link,
+  .responsive-link:hover,
+  .responsive-link:visited {
+    color: $light;
+    text-decoration: none;
+  }
+  li {
+    list-style-type: none;
+  }
+  .drop-down,
+  .sidebar-contact,
+  .sidebar-partage {
+    display: none;
+  }
+  .header-section {
+    border: 4px solid $purple;
+    background: $morePurple;
+    border-radius: 20px;
+  }
 }
