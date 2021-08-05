@@ -4,26 +4,39 @@ $purple: #710707;
 $morePurple: #280000;
 $lightgreen: #b8b42d;
 
-body {
-  background-image: url("../IMG/background.jpg");
-  background-size: cover;
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: $light;
 }
-
+.menuPuce :hover {
+  background-color: $purple;
+  color: $light;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  background: $morePurple;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  width: 99%;
+  text-align: center;
+  color: $light;
+}
 @media (min-width: 992px) {
-  .footer {
-    position: absolute;
-    display: inline;
-    bottom: 0;
+  .header-logo {
+    display: flex;
     justify-content: center;
-    color: $purple;
   }
+
   .container {
-    padding: 40px;
-    border-radius: 20px;
+    padding: 25px;
   }
   #sidebar {
     float: left;
-    width: 25%;
+    width: 30%;
     border: 4px solid $purple;
     border-radius: 20px;
     padding-bottom: 40px;
@@ -32,24 +45,17 @@ body {
   }
   #content {
     float: right;
-    width: 70%;
+    width: 65%;
     border: 4px solid $purple;
     border-radius: 20px;
-  }
-  img {
-    vertical-align: middle;
   }
   li {
     list-style: none;
   }
-  .menuPuce :hover {
-    background-color: $purple;
-    color: $light;
-  }
 
-  .sidebar-contact {
+  .sidebar-contact,
+  .navbar-vert {
     line-height: 2.2em;
-    padding: 20px;
   }
   .sidebar-partage {
     display: flex;
@@ -59,11 +65,7 @@ body {
   }
   .responsive-link {
     display: none;
-  }
-
-  .text-decoration-none,
-  .contact {
-    color: $light;
+    padding-top: 0px;
   }
 }
 
@@ -72,7 +74,6 @@ body {
     width: 300px;
     height: 150px;
   }
-  .navbar-vert,
   .responsive-link,
   .header-logo {
     display: flex;
@@ -81,8 +82,12 @@ body {
   .responsive-link,
   .responsive-link:hover,
   .responsive-link:visited {
-    color: $light;
+    display: flex;
+    color: $morePurple;
     text-decoration: none;
+    width: auto;
+    justify-content: center;
+    padding-top: 40px;
   }
   li {
     list-style-type: none;
@@ -97,4 +102,69 @@ body {
     background: $morePurple;
     border-radius: 20px;
   }
+  #mylinks {
+    border: 4px solid $purple;
+    background: $morePurple;
+    border-radius: 20px;
+    color: $light;
+  }
+}
+//Creation de l'icone
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 70px;
+  cursor: pointer;
+}
+
+label span {
+  background: $light;
+  border-radius: 10px;
+  height: 7px;
+  margin: 7px 0;
+  -webkit-transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+span:nth-of-type(1) {
+  width: 50%;
+}
+
+span:nth-of-type(2) {
+  width: 100%;
+}
+
+span:nth-of-type(3) {
+  width: 75%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+  -webkit-transform: rotatez(45deg) translate(8px, 0px);
+  transform: rotatez(45deg) translate(8px, 0px);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: rotatez(-45deg);
+  transform: rotatez(-45deg);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+  width: 50%;
+  -webkit-transform: translate(30px, -11px) rotatez(45deg);
+  transform: translate(30px, -11px) rotatez(45deg);
 }
