@@ -120,6 +120,12 @@ a:visited {
     background: #280000;
     border-radius: 20px;
     color: #fffce8;
+    margin-bottom: 15px;
+  }
+  .page-contact {
+    border: 4px solid #710707;
+    background: #280000;
+    border-radius: 20px;
   }
 }
 
