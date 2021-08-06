@@ -1,137 +1,106 @@
-$dark: #3e363f;
+//couleur du theme
 $light: #fffce8;
 $purple: #710707;
 $morePurple: #280000;
-$lightgreen: #b8b42d;
 
+* {
+  margin: 10;
+  padding: 10;
+}
+li {
+  list-style: none;
+}
 a,
 a:hover,
 a:visited {
   text-decoration: none;
-  color: $light;
+  color: #fffce8;
+}
+.sidebar-contact,
+.navbar-vert {
+  line-height: 2.2em;
+}
+.responsive-link {
+  display: none;
+  padding-top: 0px;
+}
+.footer,
+#sidebar,
+#content,
+#rol-menu {
+  background: $morePurple;
+  border-radius: 20px;
+  color: #fffce8;
+  border: 4px solid $purple;
 }
 .menuPuce :hover {
   background-color: $purple;
-  color: $light;
+  color: #fffce8;
+}
+.contain {
+  overflow: auto;
+  position: relative;
 }
 .footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  background: $morePurple;
-  border-radius: 20px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 5px;
+}
+#sidebar {
+  float: left;
+  width: 30%;
+  padding-bottom: 40px;
+  margin-right: 20px;
+}
+.sidebar-partage {
   display: flex;
   justify-content: center;
-  width: 99%;
-  text-align: center;
-  color: $light;
 }
-@media (min-width: 992px) {
-  .header-logo {
-    display: flex;
-    justify-content: center;
-  }
-  .container {
-    padding: 25px;
-    width: 1520px;
-  }
-  #sidebar {
-    float: left;
-    width: 30%;
-    border: 4px solid $purple;
-    border-radius: 20px;
-    padding-bottom: 40px;
-    background: $morePurple;
-    color: $light;
-  }
-  #content {
-    float: right;
-    width: 65%;
-    border: 4px solid $purple;
-    border-radius: 20px;
-    background: $morePurple;
-    color: $light;
-    line-height: 2.2em;
-    height: fit-content;
-    padding: 20px;
-  }
-  li {
-    list-style: none;
-  }
-
-  .sidebar-contact,
-  .navbar-vert {
-    line-height: 2.2em;
-  }
-  .sidebar-partage {
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-  .responsive-link {
-    display: none;
-    padding-top: 0px;
-  }
+#content {
+  overflow: auto;
+  line-height: 2.2em;
+  height: fit-content;
+}
+.header-logo {
+  display: flex;
+  justify-content: center;
 }
 
-@media (max-width: 992px) {
-  #content {
-    background: $morePurple;
-    color: $light;
-    border: 4px solid $purple;
-    border-radius: 20px;
-    padding: 20px;
-  }
-  #logo {
-    width: 300px;
-    height: 150px;
-  }
-  .responsive-link,
-  .header-logo {
-    display: flex;
-    justify-content: center;
-  }
-  .responsive-link,
-  .responsive-link:hover,
-  .responsive-link:visited {
-    display: flex;
-    color: $morePurple;
-    text-decoration: none;
-    width: auto;
-    justify-content: center;
-    padding-top: 40px;
-  }
-  li {
-    list-style-type: none;
-  }
+@media screen and (max-width: 992px) {
   .drop-down,
   .sidebar-contact,
   .sidebar-partage {
     display: none;
   }
+  .responsive-link {
+    display: flex;
+    padding-top: 45px;
+  }
+
+  #logo {
+    width: 300px;
+    height: 150px;
+  }
   .header-section {
-    border: 4px solid $purple;
     background: $morePurple;
     border-radius: 20px;
   }
-  #mylinks {
-    border: 4px solid $purple;
-    background: $morePurple;
-    border-radius: 20px;
-    color: $light;
+  #rol-menu {
     margin-bottom: 15px;
-  }
-  .page-contact {
-    border: 4px solid $purple;
-    background: $morePurple;
-    border-radius: 20px;
     line-height: 2.2em;
   }
+  #sidebar {
+    float: inherit;
+    width: inherit;
+    margin-right: inherit;
+    margin-bottom: 10px;
+  }
 }
-//Creation de l'icone
+//création de l'icone hamburger
 label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -142,7 +111,7 @@ label {
 }
 
 label span {
-  background: $light;
+  background: $purple;
   border-radius: 10px;
   height: 7px;
   margin: 7px 0;

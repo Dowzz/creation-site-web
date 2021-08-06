@@ -1,3 +1,4 @@
+//affichage du menu hamburger
 function toggleMenu(){
     var x = document.getElementById("rol-menu");
     if(x.style.display === "block"){
@@ -6,10 +7,12 @@ function toggleMenu(){
         x.style.display = "block";
     }
 }
-$(function(){
+//loader de la div content
+$(() =>{
     $(document.getElementsByClassName("loader")).click(function(e){
         e.preventDefault();
         url=(this.href);
+        console.log(url);
         $.get(url, function(data) {
             $('#content').html(data);
             if (window.matchMedia("(max-width: 1250px)").matches) {
@@ -20,6 +23,9 @@ $(function(){
             
         })
     })
-
-})
+    //affichage d'une page par defaut
+    window.addEventListener('load', function(){
+        $('#content').load("PAGES/who.html")
+    })
+});
 

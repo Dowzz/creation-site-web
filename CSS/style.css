@@ -1,3 +1,12 @@
+* {
+  margin: 10;
+  padding: 10;
+}
+
+li {
+  list-style: none;
+}
+
 a,
 a:hover,
 a:visited {
@@ -5,143 +14,107 @@ a:visited {
   color: #fffce8;
 }
 
+.sidebar-contact,
+.navbar-vert {
+  line-height: 2.2em;
+}
+
+.responsive-link {
+  display: none;
+  padding-top: 0px;
+}
+
+.footer,
+#sidebar,
+#content,
+#rol-menu {
+  background: #280000;
+  border-radius: 20px;
+  color: #fffce8;
+  border: 4px solid #710707;
+}
+
 .menuPuce :hover {
   background-color: #710707;
   color: #fffce8;
 }
 
+.contain {
+  overflow: auto;
+  position: relative;
+}
+
 .footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  background: #280000;
-  border-radius: 20px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 5px;
+}
+
+#sidebar {
+  float: left;
+  width: 30%;
+  padding-bottom: 40px;
+  margin-right: 20px;
+}
+
+.sidebar-partage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 99%;
-  text-align: center;
-  color: #fffce8;
 }
 
-@media (min-width: 992px) {
-  .header-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .container {
-    padding: 25px;
-    width: 1520px;
-  }
-  #sidebar {
-    float: left;
-    width: 30%;
-    border: 4px solid #710707;
-    border-radius: 20px;
-    padding-bottom: 40px;
-    background: #280000;
-    color: #fffce8;
-  }
-  #content {
-    float: right;
-    width: 65%;
-    border: 4px solid #710707;
-    border-radius: 20px;
-    background: #280000;
-    color: #fffce8;
-    line-height: 2.2em;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    padding: 20px;
-  }
-  li {
-    list-style: none;
-  }
-  .sidebar-contact,
-  .navbar-vert {
-    line-height: 2.2em;
-  }
-  .sidebar-partage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-  .responsive-link {
-    display: none;
-    padding-top: 0px;
-  }
+#content {
+  overflow: auto;
+  line-height: 2.2em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-@media (max-width: 992px) {
-  #content {
-    background: #280000;
-    color: #fffce8;
-    border: 4px solid #710707;
-    border-radius: 20px;
-    padding: 20px;
-  }
-  #logo {
-    width: 300px;
-    height: 150px;
-  }
-  .responsive-link,
-  .header-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .responsive-link,
-  .responsive-link:hover,
-  .responsive-link:visited {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    color: #280000;
-    text-decoration: none;
-    width: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 40px;
-  }
-  li {
-    list-style-type: none;
-  }
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
   .drop-down,
   .sidebar-contact,
   .sidebar-partage {
     display: none;
   }
+  .responsive-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 45px;
+  }
+  #logo {
+    width: 300px;
+    height: 150px;
+  }
   .header-section {
-    border: 4px solid #710707;
     background: #280000;
     border-radius: 20px;
   }
-  #mylinks {
-    border: 4px solid #710707;
-    background: #280000;
-    border-radius: 20px;
-    color: #fffce8;
+  #rol-menu {
     margin-bottom: 15px;
-  }
-  .page-contact {
-    border: 4px solid #710707;
-    background: #280000;
-    border-radius: 20px;
     line-height: 2.2em;
+  }
+  #sidebar {
+    float: inherit;
+    width: inherit;
+    margin-right: inherit;
+    margin-bottom: 10px;
   }
 }
 
@@ -158,7 +131,7 @@ label {
 }
 
 label span {
-  background: #fffce8;
+  background: #710707;
   border-radius: 10px;
   height: 7px;
   margin: 7px 0;
