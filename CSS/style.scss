@@ -30,9 +30,9 @@ a:visited {
     display: flex;
     justify-content: center;
   }
-
   .container {
     padding: 25px;
+    width: 1520px;
   }
   #sidebar {
     float: left;
@@ -48,6 +48,11 @@ a:visited {
     width: 65%;
     border: 4px solid $purple;
     border-radius: 20px;
+    background: $morePurple;
+    color: $light;
+    line-height: 2.2em;
+    height: fit-content;
+    padding: 20px;
   }
   li {
     list-style: none;
@@ -70,6 +75,13 @@ a:visited {
 }
 
 @media (max-width: 992px) {
+  #content {
+    background: $morePurple;
+    color: $light;
+    border: 4px solid $purple;
+    border-radius: 20px;
+    padding: 20px;
+  }
   #logo {
     width: 300px;
     height: 150px;
@@ -113,6 +125,7 @@ a:visited {
     border: 4px solid $purple;
     background: $morePurple;
     border-radius: 20px;
+    line-height: 2.2em;
   }
 }
 //Creation de l'icone
