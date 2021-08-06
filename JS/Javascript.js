@@ -7,6 +7,10 @@ function toggleMenu(){
         x.style.display = "block";
     }
 }
+//affichage d'une page par defaut
+window.addEventListener('load', function(){
+    $('#content').load("PAGES/who.html")
+})
 //loader de la div content
 $(() =>{
     $(document.getElementsByClassName("loader")).click(function(e){
@@ -22,10 +26,6 @@ $(() =>{
             }
             
         })
-    })
-    //affichage d'une page par defaut
-    window.addEventListener('load', function(){
-        $('#content').load("PAGES/who.html")
     })
 });
 
