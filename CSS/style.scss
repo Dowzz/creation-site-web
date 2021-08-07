@@ -7,6 +7,13 @@ $morePurple: #280000;
   margin: 10;
   padding: 10;
 }
+body {
+  background-image: url("../fond.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 li {
   list-style: none;
 }
