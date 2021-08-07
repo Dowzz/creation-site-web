@@ -45,7 +45,6 @@ a:visited {
 }
 
 .footer {
-  position: absolute;
   bottom: 0;
   text-align: center;
   left: 0;
@@ -75,6 +74,8 @@ a:visited {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .header-logo {
@@ -84,6 +85,10 @@ a:visited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.question {
+  font-size: 1.5em;
 }
 
 @media screen and (max-width: 992px) {

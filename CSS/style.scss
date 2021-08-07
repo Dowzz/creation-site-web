@@ -42,7 +42,6 @@ a:visited {
   position: relative;
 }
 .footer {
-  position: absolute;
   bottom: 0;
   text-align: center;
   left: 0;
@@ -63,10 +62,15 @@ a:visited {
   overflow: auto;
   line-height: 2.2em;
   height: fit-content;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 .header-logo {
   display: flex;
   justify-content: center;
+}
+.question {
+  font-size: 1.5em;
 }
 
 @media screen and (max-width: 992px) {
