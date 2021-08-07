@@ -82,8 +82,7 @@ a:visited {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .header-logo {
