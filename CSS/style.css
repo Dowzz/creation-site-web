@@ -98,6 +98,19 @@ a:visited {
   font-size: 1.5em;
 }
 
+.decoration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.meuble {
+  max-width: 100%;
+}
+
 @media screen and (max-width: 992px) {
   .drop-down,
   .sidebar-contact,
@@ -127,6 +140,12 @@ a:visited {
     width: inherit;
     margin-right: inherit;
     margin-bottom: 10px;
+  }
+  .decoration {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
 

@@ -78,6 +78,13 @@ a:visited {
 .question {
   font-size: 1.5em;
 }
+.decoration {
+  display: flex;
+  justify-content: center;
+}
+.meuble {
+  max-width: 100%;
+}
 
 @media screen and (max-width: 992px) {
   .drop-down,
@@ -107,6 +114,12 @@ a:visited {
     width: inherit;
     margin-right: inherit;
     margin-bottom: 10px;
+  }
+  .decoration {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
 //création de l'icone hamburger
