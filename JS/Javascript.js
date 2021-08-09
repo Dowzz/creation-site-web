@@ -9,7 +9,7 @@ function toggleMenu(){
 }
 //affichage d'une page par defaut
 window.addEventListener('load', function(){
-    $('#content').load("PAGES/who.html")
+    $('#content').load("PAGES/who-are-we.html")
 })
 //loader de la div content
 $(() =>{
